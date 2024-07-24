@@ -1,0 +1,174 @@
+@media (prefers-color-scheme: dark) {
+    html {
+      background-color:rgb(79, 60, 38);
+    }
+  
+  }
+  
+  @media (prefers-color-scheme: light) {
+    html {
+        background-color:antiquewhite;
+      }
+  }
+/*quelle: https://wiki.selfhtml.org/wiki/CSS/Media_Queries/Benutzereinstellungen#prefers-reduced-motion */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inhalt{
+    margin: 1.5em;
+}
+
+img{
+    max-block-size: 500px;
+    padding: 0 10px 10px 0;
+    
+}
+
+body header{
+    position:-webkit-sticky;
+    position:sticky; top:0;
+    background-color: #333;
+    opacity: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 1em 0.5em 0.5em 0.5em;
+}
+/*quelle: https://elad.medium.com/css-position-sticky-how-it-really-works-54cd01dc2d46 */
+
+
+.header ul li {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em ;
+   
+   
+}
+
+.header a {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em ;
+   
+   
+}
+
+.header img{
+    opacity: 100%;
+    transition: opacity 0.5s;
+    padding: 5px;
+    border-radius: 10px;
+    max-block-size: 50px;
+    
+}
+
+header img:hover{
+    opacity: 50%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    padding-right: 5px;
+
+}
+
+
+a:hover{
+    opacity: 50%;
+}
+
+.inhalt img {
+    float: left;
+
+}
+
+.beides {
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+body{
+    margin: 25px;
+}
+.polaroid {
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    margin-right: 25px;
+  }
+  /*quelle: https://www.w3schools.com/css/css3_images.asp */
+
+.polaroid img{
+    max-width: 100%;
+    height: auto;
+}
+  
+.container {
+    text-align: center;
+    padding: 10px 20px;
+    margin: 0 5px 5px 0;
+  }
+
+.team{
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    gap: 10px;
+}
+
+.container a{
+    text-decoration: none;
+    color: black; 
+    font-size: large;
+    padding-right: 5px;
+}
+
+.produkte{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+}
+.anfahrt img{
+    max-width: 300px;
+}
+#text{
+    max-width: 500px;
+    height: 6em;
+}
+
+.kontaktformular{
+    display: flex;
+    flex-flow: column wrap;
+
+}
+.schrankbilder{
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.schrankbilder img{
+    max-width: 350px;
+    height: auto;
+    margin: 5px 20px 5px 0px;
+}
+
+.test a{
+
+    opacity: 0%;
+    transition: opacity 0.8s;
+}
+
+.test a:hover{
+    opacity: 100%;
+}
